@@ -10,4 +10,13 @@
   align-items: center;
   border: 1px solid $border-color;
   font-size: 17px;
+  cursor: pointer;
  }
+
+
+@media (hover: hover) {
+  .button:hover:not(:focus) {
+    background-color: $button-primary-color;
+    border: none;
+  }
+}

@@ -1,0 +1,64 @@
+@import "./../variables.scss";
+
+.hero {
+
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__title {
+  line-height: 88px;
+  text-align: center;
+  padding-bottom: 27px;
+}
+
+.hero__subtitle {
+  line-height: 30px;
+  padding-bottom: 95px;
+}
+
+.hero__buttons {
+  display: flex;
+  column-gap: 35px;
+  padding-bottom: 35px;
+}
+
+.hero__button_primary {
+  background-color: $button-primary-color;
+  border: none;
+}
+
+.hero__image {
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  .hero__button_primary:hover:not(:focus) {
+    background-color: $background-color;
+    border: 1px solid $border-color;
+  }
+}
+
+
+@media (max-width:790px) {
+  .hero__title {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    row-gap: 21px;
+  }
+}
