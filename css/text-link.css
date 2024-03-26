@@ -1,0 +1,7 @@
+@media (hover: hover) {
+  .text-link:hover:not(:focus) {
+    color: #4452FE;
+  }
+}
+
+/*# sourceMappingURL=text-link.css.map */
