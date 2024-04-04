@@ -440,6 +440,9 @@ h1 {
     display: none;
   }
 }
+.hero {
+  position: relative;
+}
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -471,6 +474,14 @@ h1 {
 }
 .hero__image {
   overflow: hidden;
+  z-index: -1;
+}
+.hero__overlay {
+  position: absolute;
+  top: 970px;
+  background: linear-gradient(pink, blue);
+  height: 551px;
+  z-index: 100;
 }
 
 @media (max-width: 790px) {
