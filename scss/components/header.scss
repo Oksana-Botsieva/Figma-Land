@@ -1,27 +1,28 @@
 @import "./../variables.scss";
 
-.header__burger {
-  display: none;
-}
 
 .header {
   padding-bottom: 35px;
-}
-.header__container {
- display: flex;
- justify-content: space-between;
-  align-items: center;
-  padding: 37px 40px;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 40px;
+  }
 
-.header__main-menu {
-  display: flex;
-  column-gap: 31px;
-}
+  &__main-menu {
+    display: flex;
+    column-gap: 31px;
+  }
 
-.header___button {
-  width: 139px;
-  height: 52px;
+  &___button {
+    width: 139px;
+    height: 52px;
+  }
+
+  &__burger {
+    display: none;
+  }
 }
 
 @media (max-width:790px) {
