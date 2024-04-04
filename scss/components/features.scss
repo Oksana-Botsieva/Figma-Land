@@ -1,16 +1,17 @@
 @import "./../variables.scss";
+.features {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.features__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .features__title {
+  &__title {
     padding-bottom: 27px;
   }
 
-  .features__subtitle {
+  &__subtitle {
     padding-bottom: 80px;
     text-align: center;
     max-width: 582px;
@@ -18,40 +19,28 @@
     letter-spacing: 0.2px;
   }
 
-  .features__content {
+  &__content {
     display: flex;
     column-gap: 55px;
-
-    .features__image_block {
-      position: relative;
-    }
-
-    .features__image-first {
-      position: relative;
-      top: 0.5px;
-      left: 28px;
-    }
-
-    .features__image-last {
-      position: absolute;
-      top: 483.5px;
-      left: 352px;
-    }
-
-    .features__image-first {
-      position: relative;
-      top: 0.5px;
-      left: 28px;
-    }
-
-    .features__image-last {
-      position: absolute;
-      top: 483.5px;
-      left: 352px;
-    }
   }
 
-  .features__cards {
+  &__image_block {
+    position: relative;
+  }
+
+  &__image-first {
+    position: relative;
+    top: 0.5px;
+    left: 28px;
+  }
+
+  &__image-last {
+    position: absolute;
+    top: 483.5px;
+    left: 352px;
+  }
+
+  &__cards {
     max-width: 309px;
     display: flex;
     flex-direction: column;
@@ -59,28 +48,29 @@
     align-items: center;
     justify-content: center;
 
-    .card__name {
-    display: flex;
-      column-gap: 10px;
-      padding-bottom: 20px;
+    .card {
+     &__name {
+       display: flex;
+       column-gap: 10px;
+       padding-bottom: 20px;
+     }
 
-      .card__title {
-        font-weight: 500;
-        text-align: left;
-        line-height: 30px;
-      }
-    }
+     &__title {
+       font-weight: 500;
+       text-align: left;
+       line-height: 30px;
+     }
 
-    .card__text {
-      padding-left: 10px;
-      max-width: 269px;
-      line-height: 24px;
-      font-size: 16px;
-      letter-spacing: 0.2px;
-    }
+     &__text {
+       padding-left: 10px;
+       max-width: 269px;
+       line-height: 24px;
+       font-size: 16px;
+       letter-spacing: 0.2px;
+     }
+   }
   }
-
-
 }
+
 
 
