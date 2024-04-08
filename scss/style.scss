@@ -1,0 +1,27 @@
+@import "fonts";
+
+@import "nullstyle";
+
+@import "typography";
+
+@import "variables";
+
+@import "./ui-kit/button";
+@import "./ui-kit/text-link";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/features";
+
+body {
+  background-color: $background-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  height: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0 auto;
+}

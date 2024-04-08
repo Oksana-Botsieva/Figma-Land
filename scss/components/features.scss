@@ -1,0 +1,77 @@
+@import "./../variables.scss";
+
+.features {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    padding-bottom: 27px;
+  }
+
+  &__subtitle {
+    padding-bottom: 80px;
+    text-align: center;
+    max-width: 582px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 55px;
+  }
+
+  &__image_block {
+    position: relative;
+  }
+
+  &__image-first {
+    position: relative;
+    top: 0.5px;
+    left: 28px;
+  }
+
+  &__image-last {
+    position: absolute;
+    top: 483.5px;
+    left: 352px;
+  }
+
+  &__cards {
+    max-width: 309px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+      &__name {
+        display: flex;
+        column-gap: 10px;
+        padding-bottom: 20px;
+      }
+
+      &__title {
+        font-weight: 500;
+        text-align: left;
+        line-height: 30px;
+      }
+
+      &__text {
+        padding-left: 10px;
+        max-width: 269px;
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Graphik-Regular"), url("../assets/fonts/Graphik-Regular.woff") format("woff"), url("../assets/fonts/Graphik-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Graphik-Medium"), url("../assets/fonts/Graphik-Medium.woff") format("woff"), url("../assets/fonts/Graphik-Medium.woff2") format("woff2");
+}
+
+/*# sourceMappingURL=fonts.css.map */

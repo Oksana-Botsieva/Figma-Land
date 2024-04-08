@@ -1,0 +1,31 @@
+body {
+  font-family: Graphik, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5C5C5C;
+  letter-spacing: 0.2px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading1,
+.heading2,
+.heading3,
+.heading4,
+.heading5,
+.heading6 {
+  font-family: Graphik, sans-serif;
+  line-height: 62px;
+  font-size: 52px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=typography.css.map */

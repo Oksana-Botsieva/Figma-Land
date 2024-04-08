@@ -1,0 +1,8 @@
+@import "./../variables.scss";
+
+
+@media (hover: hover) {
+  .text-link:hover:not(:focus) {
+    color: $button-primary-color;
+  }
+}
