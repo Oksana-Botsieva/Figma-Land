@@ -1,64 +1,72 @@
 @import "./../variables.scss";
 
 .hero {
-
-}
-
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
-}
 
-.hero__title {
-  line-height: 88px;
-  text-align: center;
-  padding-bottom: 27px;
-}
-
-.hero__subtitle {
-  line-height: 30px;
-  padding-bottom: 95px;
-}
-
-.hero__buttons {
-  display: flex;
-  column-gap: 35px;
-  padding-bottom: 35px;
-}
-
-.hero__button_primary {
-  background-color: $button-primary-color;
-  border: none;
-}
-
-.hero__image {
-  overflow: hidden;
-}
-
-@media (hover: hover) {
-  .hero__button_primary:hover:not(:focus) {
-    background-color: $background-color;
-    border: 1px solid $border-color;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
-}
 
+  &__title {
+    line-height: 88px;
+    text-align: center;
+    padding-bottom: 27px;
+  }
+
+  &__subtitle {
+    line-height: 30px;
+    padding-bottom: 95px;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 35px;
+    padding-bottom: 35px;
+  }
+
+  &__button_primary {
+    background-color: $button-primary-color;
+    border: none;
+    &:hover:not(:focus) {
+      background-color: $background-color;
+      border: 1px solid $border-color;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 970px;
+    background: linear-gradient(pink, blue);
+    height: 551px;
+    z-index: 100;
+  }
+//rgba(0, 0, 0, 0), rgba(14, 14, 14, 1)
+}
 
 @media (max-width:790px) {
-  .hero__title {
-    font-size: 52px;
-    line-height: 62px;
-  }
-  .hero__subtitle {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-  }
+  .hero {
+    &__title {
+      font-size: 52px;
+      line-height: 62px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
 
-  .hero__buttons {
-    flex-direction: column;
-    row-gap: 21px;
+    &__buttons {
+      flex-direction: column;
+      row-gap: 21px;
+    }
   }
 }
