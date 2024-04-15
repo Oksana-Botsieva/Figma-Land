@@ -39,6 +39,9 @@
     position: absolute;
     top: 483.5px;
     left: 352px;
+    width: auto;
+    height: 100%;
+    transition: left 0.3s ease;
   }
 
   &__cards {
