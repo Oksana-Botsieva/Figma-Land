@@ -1,0 +1,54 @@
+@import "./../variables.scss";
+
+.gallery {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    text-align: center;
+
+    &-subtitle {
+      max-width: 571px;
+    }
+  }
+
+
+  &__catalog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-up {
+      display: flex;
+      $offset: 33px;
+      $offsets: 3;
+      gap: $offset;
+
+      &-img {
+        width: calc((100% - ($offset * $offsets)) / ($offsets + 1));
+        border-radius: 12px;
+      }
+    }
+
+    &-down {
+      display: flex;
+      //column-gap: 33px;
+      justify-content: space-between;
+      align-items: stretch;
+
+      &-img {
+        //flex-grow: 1;
+        //padding: 33px;
+        border-radius: 12px;
+      }
+
+    }
+  }
+}
