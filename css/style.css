@@ -566,6 +566,57 @@ h1 {
   letter-spacing: 0.2px;
 }
 
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery__name {
+  text-align: center;
+}
+.gallery__name-subtitle {
+  max-width: 571px;
+}
+.gallery__catalog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery__catalog-up {
+  display: flex;
+  gap: 33px;
+}
+.gallery__catalog-up-img {
+  width: calc((100% - 99px) / 4);
+  border-radius: 12px;
+}
+.gallery__catalog-down {
+  display: flex;
+  column-gap: 33px;
+}
+.gallery__catalog-down-img {
+  border-radius: 12px;
+  max-height: 285px;
+  overflow: hidden;
+}
+@media (max-width: 786px) {
+  .gallery__catalog-up {
+    flex-direction: column;
+  }
+  .gallery__catalog-up-img {
+    width: 329px;
+    height: 285px;
+    object-fit: cover;
+  }
+  .gallery__catalog-down {
+    display: none;
+  }
+}
+
 body {
   background-color: #181818;
 }
