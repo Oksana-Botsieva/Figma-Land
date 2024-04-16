@@ -1,0 +1,27 @@
+.board__container {
+  padding: 80px 180px;
+
+  &-wrapper {
+    background-color: #343434;
+    border-radius: 33px;
+
+    display: flex;
+    column-gap: 47px;
+    align-items: center;
+  }
+
+  &-text {
+    padding-left: 84px;
+  }
+
+  &-title {
+    padding-bottom: 37px;
+  }
+
+  &-button {
+
+  }
+}
+
+
+

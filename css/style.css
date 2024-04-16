@@ -566,6 +566,22 @@ h1 {
   letter-spacing: 0.2px;
 }
 
+.board__container {
+  padding: 80px 180px;
+}
+.board__container-wrapper {
+  background-color: #343434;
+  border-radius: 33px;
+  display: flex;
+  column-gap: 47px;
+  align-items: center;
+}
+.board__container-text {
+  padding-left: 84px;
+}
+.board__container-title {
+  padding-bottom: 37px;
+}
 body {
   background-color: #181818;
 }
