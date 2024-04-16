@@ -566,6 +566,97 @@ h1 {
   letter-spacing: 0.2px;
 }
 
+.partners__container {
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.partners__container-title {
+  padding-bottom: 20px;
+}
+.partners__container-text {
+  max-width: 591px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .partners__container-text {
+    max-width: 329px;
+    padding-bottom: 60px;
+  }
+}
+.partners__container-logos {
+  display: flex;
+  column-gap: 74px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+.partners__container-logos .logos__wrapper {
+  display: flex;
+  column-gap: 74px;
+}
+@media (max-width: 1024px) {
+  .partners__container-logos {
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.partners__container-button {
+  margin-bottom: 50px;
+}
+
+.testimonials__container {
+  padding-bottom: 230px;
+}
+.testimonials__container .testimonials__title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.testimonials__container .testimonials__cards-block {
+  display: flex;
+  column-gap: 23px;
+  justify-content: center;
+}
+.testimonials__container .testimonials__cards-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.testimonials__container .testimonials__cards-block-wrapper .testimonials__cards-item {
+  max-width: 430px;
+  border: 1px solid #DEDEDE;
+  border-radius: 10px;
+  padding: 40px 70px 40px 40px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.testimonials__container .testimonials__cards-block-wrapper .testimonials__cards-item .card__author {
+  display: flex;
+  column-gap: 13px;
+  padding-bottom: 30px;
+}
+.testimonials__container .testimonials__cards-block-wrapper .testimonials__cards-item .card__author .card__avatar {
+  width: 50px;
+  height: 50px;
+}
+.testimonials__container .testimonials__cards-block-wrapper .testimonials__cards-item .card__author .card__author-text {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .testimonials__container .testimonials__cards-block {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
 body {
   background-color: #181818;
 }
