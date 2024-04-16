@@ -566,6 +566,50 @@ h1 {
   letter-spacing: 0.2px;
 }
 
+.partners__container {
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.partners__container-title {
+  padding-bottom: 20px;
+}
+.partners__container-text {
+  max-width: 591px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .partners__container-text {
+    max-width: 329px;
+    padding-bottom: 60px;
+  }
+}
+.partners__container-logos {
+  display: flex;
+  column-gap: 74px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+.partners__container-logos .logos__wrapper {
+  display: flex;
+  column-gap: 74px;
+}
+@media (max-width: 1024px) {
+  .partners__container-logos {
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.partners__container-button {
+  margin-bottom: 50px;
+}
+
 body {
   background-color: #181818;
 }
