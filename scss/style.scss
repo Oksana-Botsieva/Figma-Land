@@ -8,10 +8,13 @@
 
 @import "./ui-kit/button";
 @import "./ui-kit/text-link";
+@import "./ui-kit/card";
 
 @import "./components/header";
 @import "./components/hero";
 @import "./components/features";
+@import "./components/contents";
+
 
 body {
   background-color: $background-color;
