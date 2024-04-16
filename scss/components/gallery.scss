@@ -39,16 +39,31 @@
 
     &-down {
       display: flex;
-      //column-gap: 33px;
-      justify-content: space-between;
-      align-items: stretch;
+      column-gap: 33px;
 
       &-img {
-        //flex-grow: 1;
-        //padding: 33px;
         border-radius: 12px;
+        max-height: 285px;
+        overflow: hidden;
       }
 
     }
   }
+
+  @media (max-width: 786px) {
+
+    &__catalog-up {
+      flex-direction: column;
+    }
+    &__catalog-up-img {
+      width: 329px;
+      height: 285px;
+      object-fit: cover;
+    }
+
+    &__catalog-down {
+      display: none;
+    }
+  }
 }
+
