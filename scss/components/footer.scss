@@ -1,0 +1,68 @@
+@import "./../variables.scss";
+
+
+.footer__container {
+  padding: 107px 274px 107px 274px;
+
+  .footer__navigation {
+    display: flex;
+    column-gap: 199px;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+
+    &-links {
+      display: flex;
+      column-gap: 75px;
+    }
+
+    &-item-list {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 16px;
+    }
+
+    &-social {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+
+      address {
+        font-style: normal;
+      }
+
+      &-address {
+        display: flex;
+      }
+
+      &-phone {
+        display: flex;
+      }
+
+      &-icons {
+        display: flex;
+        column-gap: 24px;
+      }
+
+      &-icon:hover:not(:focus) svg path {
+        fill: $button-primary-color;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .footer__navigation {
+      flex-direction: column;
+      row-gap: 75px;
+
+      &-links {
+        flex-direction: column;
+        row-gap: 75px;
+      }
+    }
+  }
+}
+
+

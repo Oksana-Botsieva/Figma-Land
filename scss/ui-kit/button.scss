@@ -1,7 +1,7 @@
 @import "./../variables.scss";
 
 .button {
-  width: 178px;
+  min-width: 178px;
   height: 52px;
   background: $background-color;
   color: $text-color;
@@ -11,7 +11,7 @@
   border: 1px solid $border-color;
   font-size: 17px;
   cursor: pointer;
- }
+}
 
 
 @media (hover: hover) {
